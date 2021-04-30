@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/98b760bef2.js" crossorigin="anonymous"></script>
+    <title>Lei|Profile</title>
+</head>
+
+<body>
+    <!--Global style-->
+    <div>
+        <!-- Header Section fix on the top-->
+        <header class="w-full fixed z-30">
+            <nav id="mainNav"
+                class="bg-black md:bg-transparent px-8 xl:px-24 py-3 md:py-6 flex flex-wrap md:flex-nowrap justify-between items-center my-transition">
+                <div class="flex justify-between items-center w-full">
+                    <h1>
+                        <a href="#" id="logo"
+                            class="colorClip font-black md:hidden font-orelega h-3 bg-white p-2 md:h-3 my-transition">LEI
+                        </a>
+                    </h1>
+                    <a id="mobileMenu" href="#" class="md:hidden text-white">
+                        <span class="hidden">mobile menu</span>
+                        <svg class="h-8" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                        </svg>
+                        <svg class="h-8 hidden" xmlns="http://www.w3.org/2000/svg" version="1" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                        </svg>
+                    </a>
+                </div>
+                <ul id="mainMenu"
+                    class="text-white m-auto flex-col text-center md:text-white hidden uppercase py-3 text-2xl md:text-base md:py-0 md:flex md:flex-row md:h-3 items-center">
+                    <li class="mb-3 md:mb-0"><a href="#hero">Home</a></li>
+                    <li class="mb-3 md:mb-0"><a href="#about">About</a></li>
+                    <li class="mb-3 md:mb-0"><a href="#projects">Projects</a></li>
+                    <li class="mb-3 md:mb-0"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- End Header Section -->
+
+        <!-- Hero Section -->
+        <section id="hero" class="relative ">
+            <div class="min-h-screen w-full flex justify-center items-center">
+                <div>
+                    <div class="flex items-center ">
+                        <h1 class="text-7xl font-roboto colorClip px-10">
+                            Hello,
+                        </h1>
+                        <div class="animate-wiggle text-6xl mb-3 ">👋</div>
+                    </div>
+                    <h1 class="text-7xl font-roboto colorClip p-10">My Name is
+                        Lei</h1>
+                    </h1>
+                    <div class="flex justify-center items-center">
+                        <a href="#about"> <svg xmlns="http://www.w3.org/2000/svg" class="animate-bounce  h-6 w-6"
+                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Hero Section -->
+
+        <!-- About Section -->
+        <section id="about">
+            <!-- 内容，限制宽度 -->
+            <div class="show-on-scroll max-w-5xl min-h-screen px-6 py-16 m-auto flex items-center">
+                <!-- 排列两个内容栏 -->
+                <div class="items-center md:flex md:space-x-20">
+                    <!-- card photo left -->
+                    <!-- 限制大小，一分为二-->
+                    <div class="mt-8 md:mt-0 md:w-1/2 mb-5">
+                        <!-- 居中显示 -->
+                        <div class="flex items-center justify-center">
+                            <!-- 响应式固定大小 让图片在一个相框里调整 -->
+                            <div class="max-w-md">
+                                <img src=" /src/imgaes/me.jpg" alt="me"
+                                    class="object-cover object-top w-full rounded-md shadow-2xl imgtransition"
+                                    style="height: 500px">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card info right -->
+                    <!-- 限制总宽度，一分为二 -->
+                    <div class="md:w-1/2">
+                        <!-- title -->
+                        <h3 class="text-6xl font-bold font-roboto">About Me</h3>
+                        <!-- learning experience -->
+                        <p class="max-w-md mt-4 mb-4">
+                            My name is Lei Huang and I'm a passionate learner.</p>
+                        <!-- skill list -->
+                        <ul class="list-disc list-inside my-6 space-y-4">
+                            <li>I've learned <span class="colorClip font-bold">CSS, HTML, JS, TAILWINDCSS,
+                                    REACT</span>
+                                from
+                                Mimo,
+                                Youtube and Github.</li>
+                            <li>I've learned <span class="colorClip font-bold">PS, PR, XD, EXCEL, Agile</span> from
+                                Linkedin
+                                Learning.</li>
+                            <li>I've learned <span class="colorClip font-bold">Language Education</span> from the
+                                University
+                                of
+                                Edinburgh.</li>
+                        </ul>
+                        <!-- working experience -->
+                        </p class="max-w-md mt-4 mb-4">I was a teacher / researcher / game designer. If you want to
+                        learn more about me, please feel free to contact me or view my resume. </p>
+                        <!-- buttons -->
+                        <div class="flex">
+                            <div class="flex max-w-md mt-4 mb-4">
+                                <!-- send an email by clicking the button -->
+                                <a href="mailto:lh.leihuang@outlook.com"
+                                    class="btn font-roboto font-bold border border-red-500 text-black hover:bg-red-500 hover:text-white mr-2 p-0 my-0">Contact
+                                    me</a>
+                            </div>
+                            <div class="flex max-w-md mt-4 mb-4">
+                                <a href="/src/files/Lei_Huang_CV.pdf"
+                                    class="btn font-roboto font-bold border border-red-500 text-black hover:bg-red-500 hover:text-white mr-2 p-0 my-0">Resume</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End About Section -->
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class=" min-h-screen w-full flex justify-center items-center show-on-scroll">
+                <div>
+                    <!--title-->
+                    <div class="mb-3 md:mb-10">
+                        <h1 class="p-3 text-center font-black text-6xl font-roboto">Projects</h1>
+                    </div>
+                    <!-- All projects -->
+                    <div
+                        class="grid grid-cols-1 lg:grid-cols-3 items-center justify-center md:mx-10 md:grid-cols-2  gap-y-8 gap-x-20 m-auto ">
+                        <!-- project item 1 -->
+                        <div class="max-w-sm rounded overflow-hidden shadow-2xl h-full flex-col ">
+                            <!-- project photo -->
+                            <div class="relative h-55 overflow-hidden">
+                                <!-- button -->
+                                <a href=" https://classroom.google.com/c/Mjc5NDgwNDg1NzIw?cjc=q4yzndz" target="_blank"
+                                    class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 border-red-600 rounded border-opacity-50 border-solid border  text-red-600 font-roboto px-5 py-3 hover:bg-red-500 hover:text-white">
+                                    view
+                                </a>
+                                <img class="overflow-hidden" src="/src/imgaes/googleclassroom.png"
+                                    alt="Google_Classroom">
+                            </div>
+                            <!-- project info -->
+                            <div class="px-6 py-4 ">
+                                <div class="font-bold text-xl mb-2">Google Classroom</div>
+                                <p class="text-gray-700 text-base">I
+                                    designed the course overview and week 1 lessons. I created and edited materials with
+                                    PS,
+                                    PR, AE. I created a vitual teaching avatar and
+                                    record teaching videos using facerig and OBS. </p>
+                            </div>
+                            <!--project tag-->
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-red-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#LMS</span>
+                                <span
+                                    class="inline-block bg-blue-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Online
+                                    Course Design</span>
+                                <span
+                                    class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Material
+                                    Design</span>
+                            </div>
+                        </div>
+                        <!-- project item 2 -->
+                        <div class="max-w-sm rounded overflow-hidden shadow-2xl h-full flex-col ">
+                            <!-- project photo -->
+                            <div class="relative h-55 overflow-hidden">
+                                <!-- button -->
+                                <a href=""
+                                    class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 border-red-600 rounded border-opacity-50 border-solid border  text-red-600 font-roboto px-5 py-3 hover:bg-red-500 hover:text-white">
+                                    view
+                                </a>
+                                <img class="overflow-hidden" src="/src/imgaes/Moodle.png" alt="Google_Classroom">
+                            </div>
+                            <!-- project info -->
+                            <div class="px-6 py-4 ">
+                                <div class="font-bold text-xl mb-2">Moodle Course</div>
+                                <p class="text-gray-700 text-base">Coming Soon</p>
+                            </div>
+                            <!--project tag-->
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-red-300 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#LMS</span>
+                                <span
+                                    class="inline-block bg-blue-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Online
+                                    Course Design</span>
+                                <span
+                                    class="inline-block bg-green-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#Material
+                                    Design</span>
+                            </div>
+                        </div>
+                        <!-- project item 3 -->
+                        <div class="max-w-sm rounded overflow-hidden shadow-2xl h-full flex-col ">
+                            <!-- project photo -->
+                            <div class="relative h-55 overflow-hidden">
+                                <!-- button -->
+                                <a href=""
+                                    class="absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 border-red-600 rounded border-opacity-50 border-solid border  text-red-600 font-roboto px-5 py-3 hover:bg-red-500 hover:text-white">
+                                    view
+                                </a>
+                                <img class="overflow-hidden" src="/src/imgaes/githubproject.png" alt="Google_Classroom">
+                            </div>
+                            <!-- project info -->
+                            <div class="px-6 py-4 ">
+                                <div class="font-bold text-xl mb-2">Phonics Letter Sound Board</div>
+                                <p class="text-gray-700 text-base">Coming Soon</p>
+                            </div>
+                            <!--project tag-->
+                            <div class="px-6 pt-4 pb-2">
+                                <span
+                                    class="inline-block bg-yellow-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#CSS</span>
+                                <span
+                                    class="inline-block bg-purple-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#html</span>
+                                <span
+                                    class="inline-block bg-indigo-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#JS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Projects Section -->
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="min-h-screen-4/5  flex items-center show-on-scroll">
+                <div class=" max-w-5xl px-6 py-16 m-auto flex flex-col items-center space-y-5 md:space-y-20 ">
+                    <h1 class="font-black text-6xl font-roboto">LET'S CHAT!</h1>
+                    <div class="text-center text-xl md:text-2xl">
+                        <p>I am seeking out new opportunities as an instructional designer.<span>🌟</span>
+                        </p>
+                        <p>Feel free to reach me through any platforms below. I look forward to hearing from you.
+                        </p>
+                    </div>
+                    <div class="flex justify-around items-center w-full font-roboto">
+                        <!-- email -->
+                        <div class="text-center my-scale-up">
+                            <a href="mailto:lh.leihuang@outlook.com">
+                                <div class="p-10">
+                                    <i class="far fa-envelope text-3xl"></i>
+                                    <div>Email</div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Github -->
+                        <div class="text-center my-scale-up">
+                            <a href="https://github.com/leihuang96" target="_blank">
+                                <div class="p-10">
+                                    <i class="fab fa-github text-3xl"></i>
+                                    <div>Github</div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Linkedin -->
+                        <div class="text-center my-scale-up">
+                            <a href="https://www.linkedin.com/in/lei-huang-663990195" target="_blank">
+                                <div class="p-10">
+                                    <i class="fab fa-linkedin text-3xl"></i>
+                                    <div>Linkedin</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Section -->
+
+        <!-- Footer Section -->
+        <footer class="w-full py-5 bg-gray-200 colorClip">
+            <h1 class="text-center">All rights reserved ©LEI 2021</h1>
+        </footer>
+        <!-- script section -->
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
