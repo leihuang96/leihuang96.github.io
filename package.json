@@ -9,7 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "homepage":"http://leihuang96/leihuang96.github.io",
   "dependencies": {
     "jquery": "^3.6.0",
     "postcss-cli": "^8.3.1"
