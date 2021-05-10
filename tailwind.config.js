@@ -1,8 +1,6 @@
 module.exports = {
-  purge: {
-    enabled: true,
-    content: ['./public/**/*.html', './public/**/*.js'],
-  },
+  mode: 'jit',
+  purge: ['./*.html', './public/*.js'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -28,24 +26,20 @@ module.exports = {
       backgroundImage: (theme) => ({
         'me-bg': "url('/src/imgaes/me.jpg')",
       }),
-      // custom animation
-      keyframes: {
-        wiggle: {
-          '0%, 100%': { transform: 'rotate(-4deg)' },
-          '50%': { transform: 'rotate(4deg)' },
-        },
-      },
-      animation: {
-        wiggle: 'wiggle 0.7s ease-in-out infinite',
-      },
+      // custom wiggle animation
       // scroll fade in
       animation: {
         fadeIn: 'fadeIn 2s ease-in forwards',
+        wiggle: 'wiggle 0.7s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: 0 },
           '100%': { opacity: 1 },
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-4deg)' },
+          '50%': { transform: 'rotate(4deg)' },
         },
       },
     },
